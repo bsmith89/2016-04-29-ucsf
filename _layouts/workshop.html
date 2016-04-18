@@ -39,9 +39,14 @@
               <div class="col-md-6">
                 <p>{{page.humandate}}</p>
                 {% if page.humantime %}<p>{{page.humantime}}</p>{% endif %}
-                {% if page.etherpad %}
+                {% if page.etherpad1 %}
                 <p>
-                  <strong><a href={{page.etherpad}}>etherpad</a></strong>
+                  <strong><a href={{page.etherpad1}}>Room #1 Etherpad</a></strong>
+                </p>
+                {% endif %}
+                {% if page.etherpad2 %}
+                <p>
+                  <strong><a href={{page.etherpad2}}>Room #2 Etherpad</a></strong>
                 </p>
                 {% endif %}
               </div>

@@ -20,7 +20,8 @@ helper:
     - Jiashun Zheng
     -  "Ian Driver"
 contact: ariel.deardorff@ucsf.edu
-etherpad: http://pad.software-carpentry.org/2016-04-29-ucsf
+etherpad1: http://pad.software-carpentry.org/2016-04-29-ucsf-room1
+etherpad2: http://pad.software-carpentry.org/2016-04-29-ucsf-room2
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 ---
 
@@ -239,11 +240,19 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   where 'YYYY-MM-DD-site' is the identifier for your workshop,
   e.g., '2015-06-10-esu'.
 -->
-{% if page.etherpad %}
-<p id="etherpad">
-  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
+{% if page.etherpad1 %}
+<p id="etherpad1">
+  <strong>Etherpad #1:</strong> <a href="{{page.etherpad1}}">{{page.etherpad1}}</a>.
   <br/>
-  We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
+  Room #1 (Novice) will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
+</p>
+{% endif %}
+
+{% if page.etherpad2 %}
+<p id="etherpad2">
+  <strong>Etherpad #2:</strong> <a href="{{page.etherpad2}}">{{page.etherpad2}}</a>.
+  <br/>
+  Room #2 (Advanced Beginner) will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
 </p>
 {% endif %}
 
